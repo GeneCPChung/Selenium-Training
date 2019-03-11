@@ -45,6 +45,7 @@ else if (browserName.equals("IE"))
 //	IE code
 }
 
+driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 return driver;
 

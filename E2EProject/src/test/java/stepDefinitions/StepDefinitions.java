@@ -30,19 +30,11 @@ public class StepDefinitions extends base {
 	@Given("Click on Login link in home page to land on Secure sign in Page")
 	public void click_on_Login_link_in_home_page_to_land_on_Secure_sign_in_Page() {
 		LandingPage l=new LandingPage(driver);
+		
 		l.getLogin().click(); //driver.findElement(By.css()
 	    
 	}
 
-	@When("User enters {string} and {string} and logs in")
-	public void user_enters_and_and_logs_in(String string, String string2) {
-		LoginPage lp=new LoginPage(driver);
-		lp.getEmail().sendKeys(string);
-		lp.getPassword().sendKeys(string2);
-		
-		lp.getLogin().click();
-	    
-	}
 
 	@Then("Verify that user is succesfully logged in")
 	public void verify_that_user_is_succesfully_logged_in() {
@@ -51,4 +43,21 @@ public class StepDefinitions extends base {
 	    Assert.assertTrue(p.getSearchBox().isDisplayed());
 	}
 	
+
+    @When("^User enters (.+) and (.+) and logs in$")
+    public void user_enters_and_and_logs_in(String arg1, String arg2) throws Throwable {
+        
+    	LoginPage lp=new LoginPage(driver);
+		lp.getEmail().sendKeys(arg1);
+		lp.getPassword().sendKeys(arg2);
+		
+		lp.getLogin().click();
+	}
+    
+    @And("^Close browsers$")
+    public void close_browsers() throws Throwable {
+       driver.quit();
+    }
+
+
 }
