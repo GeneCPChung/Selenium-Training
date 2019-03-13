@@ -21,7 +21,9 @@ public class LoginStep extends BaseUtil {
 
     @Given("^I navigate to the login page$")
     public void iNavigateToTheLoginPage() {
+
         System.out.println("I navigated to the login page");
+        base.driver.get("http://www.executeautomation.com/demosite/Login.html");
     }
 
     @And("^I click login button$")
@@ -31,6 +33,9 @@ public class LoginStep extends BaseUtil {
 
     @Then("^I should see the userform page$")
     public void iShouldSeeTheUserformPage() {
+
+
+
         System.out.println("I should see the userform page");
     }
 
