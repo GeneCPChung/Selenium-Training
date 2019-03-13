@@ -1,5 +1,6 @@
 package Steps;
 
+import Base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -10,7 +11,14 @@ import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginStep {
+public class LoginStep extends BaseUtil {
+
+    private BaseUtil base;
+
+    public LoginStep(BaseUtil base) {
+        this.base = base;
+    }
+
     @Given("^I navigate to the login page$")
     public void iNavigateToTheLoginPage() {
         System.out.println("I navigated to the login page");
