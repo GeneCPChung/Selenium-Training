@@ -1,0 +1,19 @@
+TestNGTutorial
+- Testing XML file importance
+- Controlling Testcase executions from TestNG XML files
+- Include/Exclude Mechanism
+- Understanding TestNG Annotations
+- Groups
+- Data Provider Annotation
+- Annotation helper Attributes
+- Parameterization in TestNG xml file
+- Running Tests in parallel with TestNG
+- How to run tests with TestNG
+	- You need to have @Test Annotation followed by method
+	- You can define multiple tests from a single class
+	- You can modularize test cases based on functionality and trigger them accordingly
+	- You can also control which methods will not be run
+	- TestNG Hierarchy
+		- Test Suite->Test Folder(Module)->Test Cases
+	- 4 test methods in class BeforeMethods==
+		- It will run before each method 
