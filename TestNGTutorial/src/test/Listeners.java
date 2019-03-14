@@ -17,13 +17,16 @@ public class Listeners implements ITestListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		//System.out.println("I successfully executed Listeners Pass code");
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
+		//screenshot code
+		//response if test is failed
+		System.out.println("I failed executed Listeners Pass code" + result.getName());
 		
 	}
 
