@@ -7,7 +7,7 @@ public class day2 {
 	
 	
 	
-	@Test
+	@Test(groups=("Smoke"))
 	public void pload() {
 		System.out.println("good");
 	}

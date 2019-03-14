@@ -17,3 +17,6 @@ TestNGTutorial
 		- Test Suite->Test Folder(Module)->Test Cases
 	- 4 test methods in class BeforeMethods==
 		- It will run before each method 
+	- Clear understanding on annotations
+	- Global environment variables can be incorporated through selenium
+	- Parameterizing with multiple data sets by running tests with multiple combinations
