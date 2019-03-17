@@ -36,9 +36,9 @@
 				</pluginManagement>
 			</build>
 		</profile>
-		
+
 		<profile>
-		<id>Smoke</id>
+			<id>Smoke</id>
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -55,9 +55,9 @@
 					</plugins>
 				</pluginManagement>
 			</build>
-		
+
 		</profile>
-		
+
 	</profiles>
 
 
