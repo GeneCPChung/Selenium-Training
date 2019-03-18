@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -62,7 +64,16 @@ public class dataDriver {
 						// into test
 						Iterator<Cell> cv = r.cellIterator();
 						while(cv.hasNext()) {
-							arrayList.add(cv.next().getStringCellValue());
+							Cell c = cv.next();
+							
+							if(c.getCellType() == CellType.STRING) {
+							
+							arrayList.add(c.getStringCellValue());
+							}
+							else {
+								arrayList.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+								
+							}
 						}
 					}
 				
