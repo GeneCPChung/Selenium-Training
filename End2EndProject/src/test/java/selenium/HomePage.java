@@ -2,6 +2,13 @@ package selenium;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,20 +18,33 @@ import resources.Base;
 
 public class HomePage extends Base{
 	
+	public static Logger log = LogManager.getLogger(Base.class.getName());
+	
+	@BeforeMethod
+	public void initialize() throws IOException {
+		driver = initializeDriver();
+		
+	}
 	
 	@Test(dataProvider = "getData")
 	
 	public void basePageNavigation(String userName, String passWord, String text) throws IOException {
-		driver = initializeDriver();		
-		LandingPage landingPage = new LandingPage(driver);
-		landingPage.getLogin().click();		
 		
+		driver.get(prop.getProperty("url"));	
+		if(driver.findElement(By.xpath("//*[@id=\"homepage\"]/div[5]/div[2]/div/div/div/span/div/div[3]/div/div/p")).isDisplayed()) {
+			 driver.findElement(By.xpath("//*[@id=\"homepage\"]/div[5]/div[2]/div/div/div/span/div/div[7]/div/div/div[2]")).click(); }
+		
+		LandingPage landingPage = new LandingPage(driver);
+		landingPage.getLogin().click();				
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys("email");
 		lp.getPassWord().sendKeys("password");
-		System.out.println(text);
+		
+		log.info(text);
 		lp.getButton().click();		
-	}
+	
+		
+		}
 	
 	@DataProvider
 	public Object[][] getData() {
@@ -48,7 +68,10 @@ public class HomePage extends Base{
 		
 	}
 	
-	
+	@AfterMethod
+	public void teardown() {
+		driver.close();
+	}
 	
 	
 	
