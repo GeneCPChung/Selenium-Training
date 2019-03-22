@@ -12,9 +12,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Base {
 	public WebDriver driver = null;
-
+	public Properties prop;
+	
 	public WebDriver initializeDriver() throws IOException {
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
 				"C:\\Users\\genec\\Desktop\\workspace\\Selenium-Training\\End2EndProject\\src\\main\\java\\resources\\data.properties");
 
