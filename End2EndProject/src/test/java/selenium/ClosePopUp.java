@@ -21,9 +21,10 @@ public class ClosePopUp extends Base {
 		
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void closing() {
 		
 		driver.close();
-	}*/
+		driver = null;
+	}
 }

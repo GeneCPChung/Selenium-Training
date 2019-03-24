@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="selenium.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validating title in page(failed)">
     <classes>
-      <class name="selenium.HomePage">
+      <class name="selenium.ValidateTitle">
         <methods>
-          <include name="basePageNavigation"/>
           <include name="initialize"/>
+          <include name="basePageNavigation"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- selenium.HomePage -->
+      </class> <!-- selenium.ValidateTitle -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Validating title in page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

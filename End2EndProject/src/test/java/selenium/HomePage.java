@@ -71,6 +71,7 @@ public class HomePage extends Base{
 	@AfterMethod
 	public void teardown() {
 		driver.close();
+		driver = null;
 	}
 	
 	

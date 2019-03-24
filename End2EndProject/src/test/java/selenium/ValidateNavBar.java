@@ -26,7 +26,7 @@ public class ValidateNavBar extends Base{
 	
 	@Test
 	
-	public void basePageNavigation() throws IOException {
+	public void validateNavigationBar() throws IOException {
 				
 		LandingPage landingPage = new LandingPage(driver);
 		
@@ -40,7 +40,9 @@ public class ValidateNavBar extends Base{
 	
 	 @AfterMethod public void teardown() {
 		 
-		 driver.close(); }
+		 driver.close(); 
+		 driver = null;	 
+	 }
 	
 		
 	

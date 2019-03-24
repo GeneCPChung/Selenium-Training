@@ -23,7 +23,7 @@ public class ValidateTitle extends Base {
 
 	@Test
 
-	public void basePageNavigation() throws IOException {
+	public void validateAppTitle() throws IOException {
 
 		LandingPage landingPage = new LandingPage(driver);
 
@@ -36,6 +36,7 @@ public class ValidateTitle extends Base {
 	public void teardown() {
 
 		driver.close();
+		driver = null;
 	}
 
 }
