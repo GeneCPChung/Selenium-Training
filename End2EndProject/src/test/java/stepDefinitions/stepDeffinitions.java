@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.Assert;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -27,20 +28,14 @@ public class stepDeffinitions extends Base {
 
 	@Given("Click on Login link in home page to land on sign in page")
 	public void click_on_Login_link_in_home_page_to_land_on_sign_in_page() {
-		// Write code here that turns the phrase above into concrete actions
+				
 		LandingPage landingPage = new LandingPage(driver);
+		if(landingPage.getPopUpSize()>0) {
+			landingPage.getPopUp().click();
+		}
 		landingPage.getLogin().click();
 	}
 
-	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\" and logs in$")
-	public void user_enters_something_and_something_and_logs_in(String strArg1, String strArg2) throws Throwable {
-		LoginPage lp = new LoginPage(driver);
-		lp.getEmail().sendKeys(strArg1);
-		lp.getPassWord().sendKeys(strArg2);
-
-		// log.info(text);
-		lp.getButton().click();
-	}
 
 	@Then("Verify that user is succesfully logged in")
 	public void verify_that_user_is_succesfully_logged_in() {
@@ -49,5 +44,20 @@ public class stepDeffinitions extends Base {
 		Assert.assertTrue(p.getSearchBox().isDisplayed());
 
 	}
+	
+	@When("^User enters (.+) and (.+) and logs in$")
+    public void user_enters_and_and_logs_in(String username, String password) throws Throwable {
+		LoginPage lp = new LoginPage(driver);
+		lp.getEmail().sendKeys(username);
+		lp.getPassWord().sendKeys(password);
+
+		// log.info(text);
+		lp.getButton().click();
+    }
+	
+	 @And("^close browsers$")
+	    public void close_browsers() throws Throwable {
+	        driver.quit();
+	    }
 
 }

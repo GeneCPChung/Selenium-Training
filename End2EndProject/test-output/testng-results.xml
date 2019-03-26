@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54512" started-at="2019-03-25T13:28:39Z" finished-at="2019-03-25T13:29:34Z">
+  <suite name="Suite" duration-ms="77519" started-at="2019-03-26T03:45:24Z" finished-at="2019-03-26T03:46:41Z">
     <groups>
     </groups>
-    <test name="Validating title in page" duration-ms="10935" started-at="2019-03-25T13:28:39Z" finished-at="2019-03-25T13:28:50Z">
+    <test name="Validating title in page" duration-ms="16885" started-at="2019-03-26T03:45:24Z" finished-at="2019-03-26T03:45:41Z">
       <class name="selenium.ValidateTitle">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.ValidateTitle@6631f5ca]" name="initialize" is-config="true" duration-ms="10625" started-at="2019-03-25T13:28:39Z" finished-at="2019-03-25T13:28:50Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.ValidateTitle@29d89d5d]" name="initialize" is-config="true" duration-ms="14408" started-at="2019-03-26T03:45:24Z" finished-at="2019-03-26T03:45:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:selenium.ValidateTitle@6631f5ca]" name="validateAppTitle" duration-ms="56" started-at="2019-03-25T13:28:50Z" finished-at="2019-03-25T13:28:50Z">
+        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:selenium.ValidateTitle@29d89d5d]" name="validateAppTitle" duration-ms="112" started-at="2019-03-26T03:45:38Z" finished-at="2019-03-26T03:45:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.ValidateTitle@6631f5ca]" name="teardown" is-config="true" duration-ms="201" started-at="2019-03-25T13:28:50Z" finished-at="2019-03-25T13:28:50Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.ValidateTitle@29d89d5d]" name="teardown" is-config="true" duration-ms="2279" started-at="2019-03-26T03:45:38Z" finished-at="2019-03-26T03:45:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- selenium.ValidateTitle -->
     </test> <!-- Validating title in page -->
-    <test name="App Test" duration-ms="3" started-at="2019-03-25T13:28:51Z" finished-at="2019-03-25T13:28:51Z">
+    <test name="App Test" duration-ms="1" started-at="2019-03-26T03:45:41Z" finished-at="2019-03-26T03:45:41Z">
     </test> <!-- App Test -->
-    <test name="Validating Navbar" duration-ms="7934" started-at="2019-03-25T13:28:51Z" finished-at="2019-03-25T13:28:59Z">
+    <test name="Validating Navbar" duration-ms="15017" started-at="2019-03-26T03:45:41Z" finished-at="2019-03-26T03:45:56Z">
       <class name="selenium.ValidateNavBar">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.ValidateNavBar@75c56eb9]" name="initialize" is-config="true" duration-ms="7692" started-at="2019-03-25T13:28:51Z" finished-at="2019-03-25T13:28:58Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.ValidateNavBar@2663e964]" name="initialize" is-config="true" duration-ms="12557" started-at="2019-03-26T03:45:41Z" finished-at="2019-03-26T03:45:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateNavigationBar()[pri:0, instance:selenium.ValidateNavBar@75c56eb9]" name="validateNavigationBar" duration-ms="44" started-at="2019-03-25T13:28:58Z" finished-at="2019-03-25T13:28:59Z">
+        <test-method status="PASS" signature="validateNavigationBar()[pri:0, instance:selenium.ValidateNavBar@2663e964]" name="validateNavigationBar" duration-ms="63" started-at="2019-03-26T03:45:54Z" finished-at="2019-03-26T03:45:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNavigationBar -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.ValidateNavBar@75c56eb9]" name="teardown" is-config="true" duration-ms="195" started-at="2019-03-25T13:28:59Z" finished-at="2019-03-25T13:28:59Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.ValidateNavBar@2663e964]" name="teardown" is-config="true" duration-ms="2392" started-at="2019-03-26T03:45:54Z" finished-at="2019-03-26T03:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- selenium.ValidateNavBar -->
     </test> <!-- Validating Navbar -->
-    <test name="Validating User Login" duration-ms="34864" started-at="2019-03-25T13:28:59Z" finished-at="2019-03-25T13:29:34Z">
+    <test name="Validating User Login" duration-ms="44936" started-at="2019-03-26T03:45:56Z" finished-at="2019-03-26T03:46:41Z">
       <class name="selenium.HomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.HomePage@27912e3]" name="initialize" is-config="true" duration-ms="3733" started-at="2019-03-25T13:28:59Z" finished-at="2019-03-25T13:29:03Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.HomePage@5e21e98f]" name="initialize" is-config="true" duration-ms="3831" started-at="2019-03-26T03:45:56Z" finished-at="2019-03-26T03:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.HomePage@27912e3]" name="basePageNavigation" duration-ms="14184" started-at="2019-03-25T13:29:03Z" data-provider="getData" finished-at="2019-03-25T13:29:17Z">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.HomePage@5e21e98f]" name="basePageNavigation" duration-ms="14236" started-at="2019-03-26T03:46:00Z" data-provider="getData" finished-at="2019-03-26T03:46:14Z">
           <params>
             <param index="0">
               <value>
@@ -66,15 +66,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.HomePage@27912e3]" name="teardown" is-config="true" duration-ms="199" started-at="2019-03-25T13:29:17Z" finished-at="2019-03-25T13:29:17Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.HomePage@5e21e98f]" name="teardown" is-config="true" duration-ms="400" started-at="2019-03-26T03:46:14Z" finished-at="2019-03-26T03:46:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.HomePage@27912e3]" name="initialize" is-config="true" duration-ms="3369" started-at="2019-03-25T13:29:17Z" finished-at="2019-03-25T13:29:20Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:selenium.HomePage@5e21e98f]" name="initialize" is-config="true" duration-ms="3572" started-at="2019-03-26T03:46:15Z" finished-at="2019-03-26T03:46:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.HomePage@27912e3]" name="basePageNavigation" duration-ms="12818" started-at="2019-03-25T13:29:20Z" data-provider="getData" finished-at="2019-03-25T13:29:33Z">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium.HomePage@5e21e98f]" name="basePageNavigation" duration-ms="22619" started-at="2019-03-26T03:46:18Z" data-provider="getData" finished-at="2019-03-26T03:46:41Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.HomePage@27912e3]" name="teardown" is-config="true" duration-ms="553" started-at="2019-03-25T13:29:33Z" finished-at="2019-03-25T13:29:34Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:selenium.HomePage@5e21e98f]" name="teardown" is-config="true" duration-ms="270" started-at="2019-03-26T03:46:41Z" finished-at="2019-03-26T03:46:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

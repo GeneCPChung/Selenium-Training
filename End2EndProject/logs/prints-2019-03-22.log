@@ -1,8 +1,8 @@
-11:56:46.933 [main] INFO  resources.Base - Navigated to landing page
-11:57:03.045 [main] INFO  resources.Base - Successfully validated NavBar
-11:57:18.896 [main] INFO  resources.Base - Non Restricted User
-11:57:34.382 [main] INFO  resources.Base - null
-09:28:45.221 [main] INFO  resources.Base - Driver is initialized
-09:28:50.366 [main] INFO  resources.Base - Navigated to landing page
-09:28:50.422 [main] INFO  resources.Base - Successfully validated Text message
-09:28:59.016 [main] INFO  resources.Base - Successfully validated NavBar
+09:29:17.161 [main] INFO  resources.Base - Non Restricted User
+09:29:33.520 [main] INFO  resources.Base - null
+23:36:59.878 [main] INFO  resources.Base - Driver is initialized
+23:37:55.898 [main] INFO  resources.Base - Navigated to landing page
+23:37:56.338 [main] INFO  resources.Base - Successfully validated Text message
+23:45:29.090 [main] INFO  resources.Base - Driver is initialized
+23:45:38.683 [main] INFO  resources.Base - Navigated to landing page
+23:45:38.795 [main] INFO  resources.Base - Successfully validated Text message

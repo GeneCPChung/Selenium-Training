@@ -2,17 +2,28 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="selenium.Listeners"/>
+    <listener class-name="selenium.ExtentReportsListeners"/>
   </listeners>
-  <test thread-count="5" name="Validating title in page(failed)">
+  <test thread-count="5" name="Validating Navbar(failed)">
     <classes>
-      <class name="selenium.ValidateTitle">
+      <class name="selenium.ValidateNavBar">
         <methods>
           <include name="initialize"/>
-          <include name="basePageNavigation"/>
           <include name="teardown"/>
+          <include name="validateNavigationBar"/>
         </methods>
-      </class> <!-- selenium.ValidateTitle -->
+      </class> <!-- selenium.ValidateNavBar -->
     </classes>
-  </test> <!-- Validating title in page(failed) -->
+  </test> <!-- Validating Navbar(failed) -->
+  <test thread-count="5" name="Validating User Login(failed)">
+    <classes>
+      <class name="selenium.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- selenium.HomePage -->
+    </classes>
+  </test> <!-- Validating User Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

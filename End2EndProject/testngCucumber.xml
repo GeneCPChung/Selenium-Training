@@ -10,8 +10,22 @@
 
 	<test name="Validating title in page">
 		<classes>
-			<class name="cucumberOptions.TestRunner" />
+			<class name="selenium.ValidateTitle" />
 		</classes>
 	</test>
-	
+	<test name="App Test">
+		<classes>
+			<class name="selenium.AppTest" />
+		</classes>
+	</test>
+	<test name="Validating Navbar">
+		<classes>
+			<class name="selenium.ValidateNavBar" />
+		</classes>
+	</test>
+	<test name="Validating User Login">
+		<classes>
+			<class name="selenium.HomePage" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
