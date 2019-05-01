@@ -1,11 +1,13 @@
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Frames {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\genec\\Desktop\\workspace\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\genec\\Code\\TestAutomation\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("http://jqueryui.com/droppable/");
 		driver.manage().window().maximize();

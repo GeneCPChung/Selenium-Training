@@ -7,7 +7,7 @@ public class TableGrids {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\genec\\Desktop\\workspace\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\genec\\Code\\TestAutomation\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get(
 				"https://www.cricbuzz.com/live-cricket-scorecard/20313/aus-vs-sl-2nd-test-sri-lanka-tour-of-australia-2019");
