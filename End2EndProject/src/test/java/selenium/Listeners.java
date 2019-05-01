@@ -1,12 +1,11 @@
 package selenium;
 
-import java.io.IOException;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import resources.Base;
+
+import java.io.IOException;
 
 public class Listeners implements ITestListener {
 	Base b = new Base();

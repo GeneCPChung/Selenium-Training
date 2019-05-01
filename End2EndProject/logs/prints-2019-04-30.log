@@ -1,0 +1,8 @@
+23:45:54.297 [main] INFO  resources.Base - Successfully validated NavBar
+23:46:14.712 [main] INFO  resources.Base - Non Restricted User
+23:46:41.339 [main] INFO  resources.Base - null
+23:13:41.725 [main] INFO  resources.Base - Driver is initialized
+23:13:46.020 [main] INFO  resources.Base - Navigated to landing page
+23:13:46.072 [main] INFO  resources.Base - Successfully validated Text message
+23:13:54.590 [main] INFO  resources.Base - Successfully validated NavBar
+23:14:12.619 [main] INFO  resources.Base - Non Restricted User

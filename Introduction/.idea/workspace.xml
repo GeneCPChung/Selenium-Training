@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39c07f4b-4b88-46f8-a7c2-bddccec89553" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/client_combined_3_141_59_sources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ActionsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActionsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutoSuggestiveDropdowns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutoSuggestiveDropdowns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckBoxes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CheckboxAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssingmentCheckbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dropdowns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dropdowns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/End2End.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/End2End.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Miscellaneous.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Miscellaneous.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultipleWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultipleWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TableGrids.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableGrids.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testCase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testCase3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,13 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ActionsDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/MultipleWindows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="625">
+              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -79,6 +54,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,17 +63,10 @@
               <item name="Introduction" type="b2602c69:ProjectViewProjectNode" />
               <item name="Introduction" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Introduction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Introduction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,18 +142,18 @@
       <workItem from="1556669723159" duration="363000" />
       <workItem from="1556670231887" duration="1272000" />
       <workItem from="1556673109212" duration="917000" />
-      <workItem from="1556674278194" duration="754000" />
+      <workItem from="1556674278194" duration="2092000" />
+      <workItem from="1556677298421" duration="157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4725000" />
+    <option name="totallyTimeSpent" value="6220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -192,7 +162,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,11 +303,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ActionsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="500">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MultipleWindows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
         </state>
       </provider>
     </entry>

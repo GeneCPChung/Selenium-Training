@@ -1,13 +1,11 @@
 package selenium;
 
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
 import resources.Base;
+
+import java.io.IOException;
 
 public class ClosePopUp extends Base {
 	
