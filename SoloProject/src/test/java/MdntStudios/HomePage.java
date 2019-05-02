@@ -1,5 +1,7 @@
 package MdntStudios;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.LandingPage;
@@ -10,11 +12,14 @@ import java.io.IOException;
 
 public class HomePage extends Base {
 
+    @BeforeMethod
+    public void setUp() throws IOException {
+        driver = initializeDriver();
+        driver.get(prop.getProperty("url"));
+    }
 
     @Test(dataProvider = "getData")
     public void basePageNavigation(String Username, String Password, String text) throws IOException {
-        driver = initializeDriver();
-        driver.get("http://qaclickacademy.com");
         LandingPage l = new LandingPage(driver);
         l.getLogin().click();
         LoginPage lp = new LoginPage(driver);
@@ -24,6 +29,12 @@ public class HomePage extends Base {
         lp.getLogin().click();
 
     }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.close();
+    }
+
     @DataProvider
     public Object[][] getData(){
         Object[][] data = new Object[2][3];
@@ -38,6 +49,5 @@ public class HomePage extends Base {
 
         return data;
     }
-
 
 }
