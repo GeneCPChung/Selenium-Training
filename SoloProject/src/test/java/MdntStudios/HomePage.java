@@ -1,5 +1,7 @@
 package MdntStudios;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -11,22 +13,28 @@ import resources.Base;
 import java.io.IOException;
 
 public class HomePage extends Base {
+    public Logger log = LogManager.getLogger(Base.class.getName());
 
     @BeforeMethod
     public void setUp() throws IOException {
         driver = initializeDriver();
-        driver.get(prop.getProperty("url"));
     }
 
     @Test(dataProvider = "getData")
     public void basePageNavigation(String Username, String Password, String text) throws IOException {
+
+        driver.get(prop.getProperty("url"));
+        log.info("Navigated to Home Page");
         LandingPage l = new LandingPage(driver);
         l.getLogin().click();
+        log.info("Clicked on Login Link");
         LoginPage lp = new LoginPage(driver);
         lp.getEmail().sendKeys(Username);
+        log.info("Entered Email");
         lp.getPassword().sendKeys(Password);
-        System.out.println(text);
+        log.info("Entered Password");
         lp.getLogin().click();
+        log.info(text);
 
     }
 
